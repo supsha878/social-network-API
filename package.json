@@ -20,7 +20,6 @@
   "homepage": "https://github.com/supsha878/social-network-API#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "moment": "^2.29.3",
     "mongoose": "^6.4.1"
   }
 }
