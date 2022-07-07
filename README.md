@@ -25,3 +25,4 @@ Social networks must maintain large amounts of data for anyone to access at anyt
 
 ## Deployment
 
+[Link to demo video](https://youtu.be/1o22CI9ynf0)
