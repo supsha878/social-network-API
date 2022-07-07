@@ -1,4 +1,4 @@
-const { Thought } = require('../models');
+const { User, Thought } = require('../models');
 
 module.exports = {
     // GET all thoughts
@@ -23,8 +23,8 @@ module.exports = {
         Thought.create(req.body)
         .then((thought) => {
             User.findOneAndUpdate(
-                { _id: req.body.userId },
-                { $addToSet: { thoughts: req.body } },
+                { username: req.body.username },
+                { $addToSet: { thoughts: thought._id } },
                 { runValidators: true, new: true }
             );
             return res.status(200).json(thought)
